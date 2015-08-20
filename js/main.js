@@ -40,68 +40,68 @@ function fillCards(data){
       var plansScore = ".card-" + i + " .plans-score";
       var publicationScore = ".card-" + i + " .publication-score";
 
-      if ( portalData[i].liaison === "completed" ){
+      if ( data[i].liaison === "completed" ){
           $(liasonScore).addClass("green");
       }
 
-      if ( portalData[i].inventory === "submitted" ){
+      if ( data[i].inventory === "submitted" ){
           $(inventoryScore).addClass("green");
-      } else if ( portalData[i].inventory === "in progress" ){
+      } else if ( data[i].inventory === "in progress" ){
           $(inventoryScore).addClass("yellow");
-      } else if ( portalData[i].inventory === "not started" ){
+      } else if ( data[i].inventory === "not started" ){
           $(inventoryScore).addClass("red");
       }
 
-      if ( portalData[i].plans === "submitted" ){
+      if ( data[i].plans === "submitted" ){
           $(plansScore).addClass("green");
-      } else if ( portalData[i].plans === "not yet" ){
+      } else if ( data[i].plans === "not yet" ){
           $(plansScore).addClass("red");
       }
 
-      if ( portalData[i].publication === "completed" ){
+      if ( data[i].publication === "completed" ){
           $(publicationScore).addClass("green");
-      } else if ( portalData[i].publication === "in progress" ){
+      } else if ( data[i].publication === "in progress" ){
           $(publicationScore).addClass("yellow");
-      } else if ( portalData[i].publication === "unknown" ){
+      } else if ( data[i].publication === "unknown" ){
           $(publicationScore).addClass("red");
       }
 
 
 
-      $(cardDeptName).text(portalData[i].dept)
-      $(liasonScore).text(portalData[i].liaison)
-      $(inventoryScore).text(portalData[i].inventory)
-      $(plansScore).text(portalData[i].plans)
-      $(publicationScore).text(portalData[i].publication)
+      $(cardDeptName).text(data[i].dept)
+      $(liasonScore).text(data[i].liaison)
+      $(inventoryScore).text(data[i].inventory)
+      $(plansScore).text(data[i].plans)
+      $(publicationScore).text(data[i].publication)
 
-      var imgFilename = portalData[i].dept.toLowerCase().replace(/\s+/g, "-");
+      var imgFilename = data[i].dept.toLowerCase().replace(/\s+/g, "-");
       var imgPath = "img/" + imgFilename + ".svg";
 
       $(".card-" + i + " .dept-icon").attr("src", imgPath)
 
     };
 
-
 }
 
-var htmlBlock = '<div class="card"> \
-                    <p class="dept-name"></p> \
-                    <img class="dept-icon" src=""/> \
+htmlBlock = '<div class="card"> \
+                <p class="dept-name"></p> \
+                <img class="dept-icon" src=""/> \
                 <div class="score-row"> \
                     <div class="score">\
-                        <p class="score-title">Liaison</p>\
+                        <img class="metric-icon" src="img/liaison.svg"/>\
                         <p class="score-text liaison-score"></p>\
                     </div>\
                     <div class="score">\
-                        <p class="score-title">Inventory</p>\
+                        <img class="metric-icon" src="img/inventory.svg"/>\
                         <p class="score-text inventory-score"></p>\
                     </div>\
                     <div class="score">\
-                        <p class="score-title">Plans</p>\
+                        <img class="metric-icon" src="img/plan.svg"/>\
                         <p class="score-text plans-score"></p>\
                     </div>\
                     <div class="score">\
-                        <p class="score-title">Publication</p>\
+                        <img class="metric-icon" src="img/publish.svg"/>\
                         <p class="score-text publication-score"></p>\
                     </div>\
-                </div>'
+                </div>\
+            </div>'

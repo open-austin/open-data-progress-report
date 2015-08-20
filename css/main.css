@@ -80,6 +80,13 @@ textarea {
     resize: vertical;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -95,60 +102,83 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h1, h2, h3, p, span {
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero {
+    text-align: center;
+}
+
 .hero-text {
-    color:#29299c;
-    font-size:40px;
+    color: #29299c;
+    font-size: 40px;
+}
+
+.container {
+    /*border: 5px solid goldenrod;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
 }
 
 .card {
-    border:1px solid black;
-    width:24%;
-    height:150px;
+    border: 1px solid black;
+    width: 20%;
     text-align: center;
-
-}
-
-
-.container {
-    display: flex;
-    flex-direction:row;
-    flex-wrap:wrap;
 }
 
 .dept-icon {
     height: 50px;
 }
 
+.metric-icon {
+    height: 45px;
+}
+
 .dept-name {
-    color:#3f3f51;
+    color: #3f3f51;
     text-align: center;
-    margin:0px;
+    margin: 0px;
     padding: 10px 20px;
+    font-weight: bold;
 
 }
 
-.score-row{
+.score-row {
     display: flex;
-    height:75px;
-    padding:7px;
+    height: 75px;
+    padding: 7px;
     text-align: center;
 }
 
 .score {
-    width:25%;
+    width: 25%;
 }
-.score-title{
+
+.score .yellow {
+    color: black;
+}
+
+.score-title {
     font-size: 12px;
 }
-.score-text{
+
+.score-text {
     font-size: 10px;
+    color: white;
 }
+
 .green {
     background: green;
 }
+
 .yellow {
     background: yellow;
 }
+
 .red {
     background: red;
 }
