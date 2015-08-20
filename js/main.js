@@ -1,29 +1,40 @@
 "use strict"
 
-console.log("Hello internet makers!");
-
 var url = 'https://data.austintexas.gov/resource/8qty-vat2.json';
-var portalData;
+var url2 = 'https://data.austintexas.gov/api/views/8qty-vat2.json';
+var htmlBlock;
+
 
 console.log('GET', url);
-
 $.ajax({
     method: 'GET',
     url: url,
 }).done(function(data, status) {
     console.log('DONE: Status is ', status)
-    portalData = data;
-
-    fillHeader(portalData);
-    fillCards(portalData);
-
+    fillHeader(data);
+    fillCards(data);
 }).fail(function(xhr, status, err) {
+    console.error('fail', status, err);
+});
+
+console.log('GET', url2);
+$.ajax({ 
+    method: 'GET', 
+    url: url2,
+}).done(function(data, status) {
+    console.log('DONE: Status is ', status)
+    findLastUpdate(data);
+}).fail(function(xhr, status, err) { 
     console.error('fail', status, err);
 });
 
 function fillHeader(data){
     $(".dept-count").text(data.length);
+}
 
+function findLastUpdate(data){
+    var date = new Date(data.rowsUpdatedAt * 1000);
+    $(".updated-date").text(date.toDateString());
 }
 
 function fillCards(data){
