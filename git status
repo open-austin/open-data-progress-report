@@ -1,0 +1,64 @@
+[33mcommit 2e128c61aabc4aaffcdc7c888b0f5c7bdca390ac[m
+Author: sharlachamberlain <sharlachamberlain@gmail.com>
+Date:   Thu Aug 20 16:29:35 2015 -0500
+
+    Uploaded first batch of dept icons.
+
+[33mcommit c9833858d5206b6949a3847b82dfc3b52a334be4[m
+Author: mateoclarke <code@mateoclarke.com>
+Date:   Thu Aug 20 02:13:56 2015 -0500
+
+    This'll keep'm accountable...
+
+[33mcommit 3363081a56a61b2c6d6e20f7bda152c67a9349ee[m
+Author: mateoclarke <code@mateoclarke.com>
+Date:   Thu Aug 20 02:13:18 2015 -0500
+
+    I make you look pretty...ish
+
+[33mcommit 4eb0503018c4b9d06c07c69d605134a5dd427977[m
+Author: mateoclarke <code@mateoclarke.com>
+Date:   Thu Aug 20 02:12:31 2015 -0500
+
+    Destroy all crufty boilerplate
+
+[33mcommit 699e583ebd29b774867bbc174428566c3eac2aa5[m
+Author: mateoclarke <code@mateoclarke.com>
+Date:   Thu Aug 20 02:12:01 2015 -0500
+
+    The noun project is pretty damn cool
+
+[33mcommit 445ff9268d001ee85df921b74f1ab5aac9586833[m
+Author: mateoclarke <code@mateoclarke.com>
+Date:   Thu Aug 20 02:11:38 2015 -0500
+
+    Better favicon
+
+[33mcommit 62d222b97e580acdad026684b0a1be5a398cb419[m
+Author: mateoclarke <code@mateoclarke.com>
+Date:   Thu Aug 20 02:11:05 2015 -0500
+
+    We don't need this much freaking boilerplate
+
+[33mcommit 75f2facbe25d9ca204220f534f837586b346d17d[m
+Merge: 10dd1a1 66cef0f
+Author: Mateo Clarke <code@mateoclarke.com>
+Date:   Wed Aug 19 22:30:45 2015 -0500
+
+    Merge pull request #1 from open-austin/gh-pages
+    
+    Add color system. One image so far
+
+[33mcommit 66cef0f3a875b064426007d14fb585968532b870[m
+Author: Mateo Clarke <code@mateoclarke.com>
+Date:   Wed Aug 19 22:29:18 2015 -0500
+
+    Add color system. One image so far
+
+[33mcommit 10dd1a18d7dc009a36862dd9131593c11e89c8b1[m
+Author: Mateo Clarke <code@mateoclarke.com>
+Date:   Wed Aug 19 21:33:20 2015 -0500
+
+    initial commit
+    
+    this is a good stopping place. we are pulling from Socrata with ajax and we need to do further formatting.
