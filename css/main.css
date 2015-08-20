@@ -103,8 +103,11 @@ textarea {
 .card {
     border:1px solid black;
     width:24%;
-    height:200px;
+    height:150px;
+    text-align: center;
+
 }
+
 
 .container {
     display: flex;
@@ -112,15 +115,23 @@ textarea {
     flex-wrap:wrap;
 }
 
+.dept-icon {
+    height: 50px;
+}
+
 .dept-name {
     color:#3f3f51;
     text-align: center;
-    margin: 10px 20px;
+    margin:0px;
+    padding: 10px 20px;
 
 }
 
 .score-row{
     display: flex;
+    height:75px;
+    padding:7px;
+    text-align: center;
 }
 
 .score {
@@ -132,7 +143,15 @@ textarea {
 .score-text{
     font-size: 10px;
 }
-
+.green {
+    background: green;
+}
+.yellow {
+    background: yellow;
+}
+.red {
+    background: red;
+}
 
 
 
