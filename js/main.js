@@ -18,13 +18,13 @@ $.ajax({
 });
 
 console.log('GET', url2);
-$.ajax({ 
-    method: 'GET', 
+$.ajax({
+    method: 'GET',
     url: url2,
 }).done(function(data, status) {
     console.log('DONE: Status is ', status)
     findLastUpdate(data);
-}).fail(function(xhr, status, err) { 
+}).fail(function(xhr, status, err) {
     console.error('fail', status, err);
 });
 
@@ -40,16 +40,16 @@ function findLastUpdate(data){
 function fillCards(data){
 
     for (var i = 0; i < data.length; i++) {
+      var $container       = $(".container"),
+          cardDeptName     = ".card-" + i + " .dept-name",
+          liasonScore      = ".card-" + i + " .liaison-score",
+          inventoryScore   = ".card-" + i + " .inventory-score",
+          plansScore       = ".card-" + i + " .plans-score",
+          publicationScore = ".card-" + i + " .publication-score";
 
-      var $container = $(".container").append(htmlBlock);
-
+      $container.append(htmlBlock);
       $container.children().last().addClass("card-"+i);
 
-      var cardDeptName = ".card-" + i + " .dept-name";
-      var liasonScore = ".card-" + i + " .liaison-score";
-      var inventoryScore = ".card-" + i + " .inventory-score";
-      var plansScore = ".card-" + i + " .plans-score";
-      var publicationScore = ".card-" + i + " .publication-score";
 
       if ( data[i].liaison === "completed" ){
           $(liasonScore).addClass("green");
@@ -80,10 +80,10 @@ function fillCards(data){
 
 
       $(cardDeptName).text(data[i].dept)
-      $(liasonScore).text(data[i].liaison)
-      $(inventoryScore).text(data[i].inventory)
-      $(plansScore).text(data[i].plans)
-      $(publicationScore).text(data[i].publication)
+      $(liasonScore + " .score-text").text(data[i].liaison)
+      $(inventoryScore + " .score-text").text(data[i].inventory)
+      $(plansScore + " .score-text").text(data[i].plans)
+      $(publicationScore + " .score-text").text(data[i].publication)
 
       var imgFilename = data[i].dept.toLowerCase().replace(/\s+/g, "-");
       var imgPath = "img/" + imgFilename + ".svg";
@@ -92,27 +92,32 @@ function fillCards(data){
 
     };
 
+    insertSVGIcon(".liaison-score", liaisonIcon);
+    insertSVGIcon(".inventory-score", inventoryIcon);
+    insertSVGIcon(".plans-score", planIcon);
+    insertSVGIcon(".publication-score", publishIcon);
+
+}
+
+function insertSVGIcon(selector, icon){
+  $(selector).prepend(icon)
 }
 
 htmlBlock = '<div class="card"> \
                 <p class="dept-name"></p> \
                 <img class="dept-icon" src=""/> \
                 <div class="score-row"> \
-                    <div class="score">\
-                        <img class="metric-icon" src="img/liaison.svg"/>\
-                        <p class="score-text liaison-score"></p>\
+                    <div class="score liaison-score">\
+                        <p class="score-text"></p>\
                     </div>\
-                    <div class="score">\
-                        <img class="metric-icon" src="img/inventory.svg"/>\
-                        <p class="score-text inventory-score"></p>\
+                    <div class="score inventory-score">\
+                        <p class="score-text"></p>\
                     </div>\
-                    <div class="score">\
-                        <img class="metric-icon" src="img/plan.svg"/>\
-                        <p class="score-text plans-score"></p>\
+                    <div class="score plans-score">\
+                        <p class="score-text"></p>\
                     </div>\
-                    <div class="score">\
-                        <img class="metric-icon" src="img/publish.svg"/>\
-                        <p class="score-text publication-score"></p>\
+                    <div class="score publication-score">\
+                        <p class="score-text"></p>\
                     </div>\
                 </div>\
             </div>'
