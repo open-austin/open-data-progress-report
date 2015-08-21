@@ -158,7 +158,7 @@ h1, h2, h3, p, span {
     width: 25%;
 }
 
-.score .yellow {
+.yellow .score-text {
     color: black;
 }
 
@@ -169,6 +169,7 @@ h1, h2, h3, p, span {
 .score-text {
     font-size: 10px;
     color: white;
+    margin: 0;
 }
 
 .green {
@@ -183,13 +184,40 @@ h1, h2, h3, p, span {
     background: red;
 }
 
+.metric-icon path {
+  fill: white;
+}
 
+.yellow .metric-icon path {
+  fill: black;
+}
 
+.symbols {
+  text-align: center;
+  margin: 40px;
+}
+.symbols-key {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+.symbols-text {
+  width: 150px;
+  height: 30px;
+}
+.symbols-icon {
+  height: 100px;
+  width: 150px;
+  border: 1px solid black;
+}
 
+.description {
+  margin: 0 25%;
+}
 
-
-
-
+.secondary-title {
+  text-align: center;
+}
 
 
 
