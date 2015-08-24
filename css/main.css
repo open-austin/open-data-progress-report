@@ -45,11 +45,7 @@ h1, h2, h3 {
 .symbols-item {
     width: 150px;
     height: 100px;
-    /*border: 1px solid black;*/
     padding: 5px;
-/*    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);*/
 }
 
 .symbols-text {
@@ -73,7 +69,7 @@ h1, h2, h3 {
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid #3f3f51;
     width: 20%;
     text-align: center;
 }
@@ -107,7 +103,7 @@ h1, h2, h3 {
 }
 
 .yellow .score-text {
-    color: black;
+    color: #3f3f51;
 }
 
 .score-title {
@@ -121,15 +117,15 @@ h1, h2, h3 {
 }
 
 .green {
-    background: green;
+    background: #00A201;
 }
 
 .yellow {
-    background: yellow;
+    background: #FFE433;
 }
 
 .red {
-    background: red;
+    background: #D92727;
 }
 
 .metric-icon path,
@@ -138,18 +134,6 @@ h1, h2, h3 {
 }
 
 .yellow .metric-icon path {
-    fill: black;
+    fill: #3f3f51;
 }
 
-
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
