@@ -40,6 +40,10 @@
     border: 2px solid #29299c;
 }
 
+.grid-header .score-row:hover {
+    border: none;
+}
+
 @media only screen and (max-width : 867px) {
 	.container {
 		padding: 0;
