@@ -16,6 +16,9 @@ h1, h2, h3 {
 
 .tab {
     text-align: right;
+    color: #29299c;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .hero {
