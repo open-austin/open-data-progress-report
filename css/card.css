@@ -1,0 +1,203 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0 5px 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #3f3f51;
+    background: #f0eeee;
+}
+
+h1, h2, h3 {
+    color: #a36a09;
+    font-weight: normal;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+}
+
+.hero {
+    font-size: 1em;
+    line-height: 1.9em;
+    background: gray;
+    display: block;;
+    margin: 0;
+    padding: 30px 0;
+    background: #f0eeee;
+}
+
+.hero .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.hero h2 {
+    color: #b36e41;
+    font-size: 2.3em;
+    text-align: left;
+}
+
+.open-atx-logo {
+    display: block;
+    padding: 10px 0 10px;
+}
+
+.guide {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.symbols {
+    text-align: center;
+}
+
+.symbols-key {
+    display: flex;
+    justify-content: center;
+}
+
+.symbols-item {
+    width: 150px;
+    height: 100px;
+}
+
+.symbols-text {
+    margin: 0;
+    font-weight: bold;
+}
+
+.symbols-icon {
+    height: 60px;
+}
+.symbols-icon svg path {
+    fill: #fff;
+}
+
+.report-header {
+    text-align: center;
+}
+
+.report-wrapper {
+    margin: 0 auto;
+    display: block;
+}
+
+.report-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+    background: #fafafa;
+}
+
+.dept-icon {
+    height: 50px;
+    width: 50px;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background: #ffffff;
+}
+
+.dept-name {
+    color: #3f3f51;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.score-row {
+    display: flex;
+    height: 100px;
+    padding: 7px;
+    text-align: center;
+}
+
+.score {
+    width: 25%;
+    padding: 5px;
+    margin-right: 2px;
+    align-self: flex-end;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.score:first-child {
+    border-left-top-radius: 5px;
+    border-left-bottom-radius: 5px;
+}
+.score:last-child {
+    border-right-top-radius: 5px;
+    border-right-bottom-radius: 5px;
+}
+
+.score-title {
+    font-size: 11px;
+}
+
+.score-text {
+    font-size: 14px;
+    color: #3f3f51;
+    margin: 0;
+}
+
+.metric-name {
+    font-size: 12px;
+    color: #3f3f51;
+    margin: 0;
+}
+
+.green {
+    border-color: #00A201;
+    background: #c9fa9f;
+}
+
+.yellow {
+    border-color: #9da10b;
+    background: #f7f898;
+}
+
+.red {
+    border-color: #bc1109;
+    background: #fccbc9;
+}
+
+.gray {
+    border-color: #ddd;
+}
+
+.metric-icon {
+    height: 30px;
+}
+.metric-icon path {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    text-align: center;
+}
