@@ -17,8 +17,17 @@ h1, h2, h3 {
     font-weight: normal;
     text-align: center;
 }
+
 h2 {
     font-size: 2em;
+}
+
+p {
+    margin: 7px 0;
+}
+
+ol, li {
+    margin: 5px 0;
 }
 
 .hero {
@@ -39,6 +48,7 @@ h2 {
 .hero h1 {
     font-size: 2.5em;
     text-align: left;
+    margin: 0.25em 0;
 }
 
 .hero h2 {
@@ -90,18 +100,29 @@ h2 {
 }
 
 .report-wrapper {
-    width: 1250px;
     margin: 0 auto;
     display: block;
 }
 
 .report-container {
-    margin-left: -40px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-self: center;
     align-items: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.grid-header {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    border: 2px solid transparent;
+}
+
+.grid-header .score-row:hover {
+    border: 2px solid transparent;
 }
 
 .card {
@@ -132,30 +153,46 @@ h2 {
     padding: 0;
 }
 
+.first-column-score {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .score-row {
     display: flex;
     height: 100px;
-    padding: 7px;
     text-align: center;
+    height: auto !important;
+    border: 2px solid transparent;
+}
+
+.score-row:hover {
+    border: 2px solid #77787C;
+}
+
+
+
+.item {
+    width: 100%;
 }
 
 .score {
-    width: 25%;
     padding: 5px;
     margin-right: 2px;
-    align-self: flex-end;
     border-width: 0;
     border-style: solid;
     border-radius: 5px;
-}
-
-.score:first-child {
-    border-left-top-radius: 5px;
-    border-left-bottom-radius: 5px;
-}
-.score:last-child {
-    border-right-top-radius: 5px;
-    border-right-bottom-radius: 5px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    align-self: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .score-title {
@@ -202,4 +239,25 @@ h2 {
 
 .footer {
     text-align: center;
+}
+
+@media only screen and (max-width : 867px) {
+    .container {
+        padding: 0;
+    }
+    .first-column {
+        width: 40%;
+    }
+    .score {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width : 525px) {
+    .grid-header {
+        font-weight: bold;
+        font-size: .8em;
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
 }
