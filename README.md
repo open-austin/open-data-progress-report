@@ -1,3 +1,3 @@
 # open-data-progress-report
 
-:ocean: :ocean: :ocean:
+:ocean: :ocean:
