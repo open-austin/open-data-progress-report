@@ -8,7 +8,7 @@ Information is a service of our government. Data is a service of our government.
 
 Accessible data promotes better decisions and planning... And its fun to geek out on :eyeglasses:.
 
-Austin's City Manager kicked off "Open Data Initiative 2.0" in May 2015. Every city department was asked to:
+Austin's City Manager kicked off an "Open Data Initiative 2.0" in April 2015 ([see the Memo](http://www.open-austin.org/wp-content/uploads/2013/09/20150408_Open_Data_Initiative_2_0.pdf)). Every city department was asked to:
 
 1. designate an open data liaison
 2. conduct a data inventory
