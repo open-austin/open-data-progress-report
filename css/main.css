@@ -1,9 +1,13 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
+
 body {
     margin: 0;
     padding: 0 5px 30px;
@@ -12,7 +16,9 @@ body {
     background: #f0eeee;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #a36a09;
     font-weight: normal;
     text-align: center;
@@ -26,7 +32,8 @@ p {
     margin: 7px 0;
 }
 
-ol, li {
+ol,
+li {
     margin: 5px 0;
 }
 
@@ -34,7 +41,7 @@ ol, li {
     font-size: 1em;
     line-height: 1.9em;
     background: gray;
-    display: block;;
+    display: block;
     margin: 0;
     padding: 30px 0;
     background: #f0eeee;
@@ -91,6 +98,7 @@ ol, li {
 .symbols-icon {
     height: 60px;
 }
+
 .symbols-icon svg path {
     fill: #fff;
 }
@@ -160,21 +168,17 @@ ol, li {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 5px;
 }
 
 .score-row {
     display: flex;
+    flex-wrap: wrap;
     height: 100px;
     text-align: center;
     height: auto !important;
     border: 2px solid transparent;
 }
-
-.score-row:hover {
-    border: 2px solid #77787C;
-}
-
-
 
 .item {
     width: 100%;
@@ -183,6 +187,7 @@ ol, li {
 .score {
     padding: 5px;
     margin-right: 2px;
+    margin-bottom:  2px;
     border-width: 0;
     border-style: solid;
     border-radius: 5px;
@@ -193,6 +198,7 @@ ol, li {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    flex: 1 1 0px;
 }
 
 .score-title {
@@ -233,6 +239,7 @@ ol, li {
 .metric-icon {
     height: 30px;
 }
+
 .metric-icon path {
     fill: rgba(0, 0, 0, 0.5);
 }
@@ -241,23 +248,55 @@ ol, li {
     text-align: center;
 }
 
-@media only screen and (max-width : 867px) {
+/*------------------------------*/
+/* Media Queries - Responsive Layout */
+/*------------------------------*/
+
+/* Large desktop */
+
+@media (min-width: 1200px) {}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {}
+
+/* Landscape phone to portrait tablet */
+@media only screen and (max-width: 867px) {
     .container {
         padding: 0;
     }
+
     .first-column {
         width: 40%;
     }
+
     .score {
         width: 15%;
     }
 }
 
-@media only screen and (max-width : 525px) {
+@media (max-width: 767px) {}
+
+@media only screen and (max-width: 525px) {
     .grid-header {
         font-weight: bold;
         font-size: .8em;
         margin-bottom: 5px;
         text-decoration: underline;
+    }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    .first-column-score {
+        width: 100%;
+    }
+    .first-column-score img {
+        order: -1;
+    }
+
+    .score-row {
+        margin-bottom: 10px;
     }
 }
